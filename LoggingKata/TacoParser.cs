@@ -12,8 +12,8 @@
             logger.LogInfo("Begin parsing");
 
             if (line == null)
-            {// Do not fail if one record parsing fails, return null
-                return null; // TODO Implement
+            { 
+                return null; 
             }
 
             var cells = line.Split(',');
