@@ -26,7 +26,7 @@ namespace LoggingKata
                 logger.LogWarning("Warning");
             }
 
-            logger.LogInfo($"Lines: {lines[0]}");
+            //logger.LogInfo($"Lines: {lines[0]}");
 
             var parser = new TacoParser();
 
@@ -52,9 +52,7 @@ namespace LoggingKata
                     if (corA.GetDistanceTo(corB) >= furthestDistance)
                     {
                         furthestDistance = corA.GetDistanceTo(corB);
-
                         locA = locations[i];
-
                         locB = locations[j];
                     }
 
@@ -62,8 +60,7 @@ namespace LoggingKata
             }
 
             Console.WriteLine($"The two furtherst Tacobells are {locA.Name} and {locB.Name}");
-            // TODO:  Find the two Taco Bells in Alabama that are the furthest from one another.
-            // HINT:  You'll need two nested forloops
+            
         }
     }
 }

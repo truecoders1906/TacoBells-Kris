@@ -28,8 +28,6 @@ namespace LoggingKata.Test
             Assert.NotNull(actual);
             Assert.NotNull(actual.Location);
             Assert.NotNull(actual.Name);
-            Assert.True(actual.Name.Length > 0);
-
         }
 
         [Theory]
